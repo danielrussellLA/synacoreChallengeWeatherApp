@@ -1,11 +1,7 @@
-// TODO make JSON of weather icons - set the image depending on current condition
-// TODO store API key
-
 var currentLocation = document.getElementById("currentLocation");
 var currentTemp = document.getElementById("currentTemp");
 var currentCondition = document.getElementById("currentCondition");
 var weatherIcon = document.getElementById("weatherIcon")
-
 
 function getWeather(){
   httpRequest('https://weathersync.herokuapp.com/ip', function(data){
@@ -30,7 +26,6 @@ function displayWeatherData(data, lat, lng){
 	weatherIcon.innerHTML = "<img src='http://openweathermap.org/img/w/" + icon + ".png''>"
 }
 
-
 function httpRequest(url, callback){
 	var weatherData = new XMLHttpRequest();
 	weatherData.onreadystatechange = function(){
@@ -44,5 +39,4 @@ function httpRequest(url, callback){
 	weatherData.send(null);
 }
 
-getWeather()
-
+getWeather();
