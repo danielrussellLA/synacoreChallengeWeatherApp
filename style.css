@@ -1,0 +1,40 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	color: dodgerblue;
+}
+
+body {
+	text-align: center;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+}
+
+#currentTemp {
+	font-size: 4em;
+	font-weight: 200;
+}
+
+#currentLocation {
+	font-size: 3em;
+	font-weight: 200;
+}
+
+#currentCondition {
+	font-size: 3em;
+	font-weight: 200;
+}
+
+#title {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+/*@media(max-width: 700px){
+ #title {
+ 	font-size: 2em;
+ }
+}*/
